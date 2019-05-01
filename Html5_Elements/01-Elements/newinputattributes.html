@@ -17,15 +17,15 @@
                 </header>
                 <div>
                     <label >Adiniz :</label>
-                    <input type="text" id="ad" placeholder="Adiniz" autofocus>
+                    <input type="text" id="ad" placeholder="Adiniz" autofocus required>
                 </div>
                 <div>
                     <label >Soyadiniz :</label>
-                    <input type="text" id="soyad" placeholder="Soyadiniz" autocomplete="off">
+                    <input type="text" id="soyad" placeholder="Soyadiniz" autocomplete="off" required>
                 </div>
                 <div>
                     <label >Dogum Tarihiniz :</label>
-                    <input type="date" id="dogum_tarihi" placeholder="gg.aa.yyyy">
+                    <input type="date" id="dogum_tarihi" placeholder="gg.aa.yyyy" required>
                 </div>
                 <div>
                     <label >E-Posta Adresi :</label>
@@ -33,11 +33,11 @@
                 </div>
                 <div>
                     <label >Telefonunuz :</label>
-                    <input type="tel" id="tel" placeholder="(000) 000 00 00">
+                    <input type="tel" id="tel" placeholder="(000) 0000000" autocomplete="off" pattern="\([2|5]{3}\)  [0-9]{7}">
                 </div>
                 <div>
                     <label >Yasiniz :</label>
-                    <input type="number" id="yas" min="18" max="99" placeholder="18">
+                    <input type="number" id="yas" min="18" max="99" step="2" placeholder="18">
                 </div>
                 <div>
                     <label >Favori renginiz :</label>
@@ -46,6 +46,10 @@
                 <div>
                     <label >Blog Adresiniz :</label>
                     <input type="url" id="blog_adresi" placeholder="http://muratbaseren.com.tr" >
+                </div>
+                <div>
+                    <label >Resminiz :</label>
+                    <input type="file" multiple>
                 </div>
                 <div>
                     <hr>
@@ -90,10 +94,13 @@
                     <textarea id="adres" cols="30" rows="10" placeholder="abc cad. abc sk."></textarea>
                 </div>
                 <div>
+                    <img src="hrrp://placehold.it/100x100" width="150" height="150">
+                </div>
+                <div>
                     <br>
                     <button type="reset">Sifirla</button>
                     <button type="submit">Gonder</button>
-                    <button type="submit" formaction="/Home/Index" formenctype="multipart/form-data">Gonder Diger Sayfa</button>
+                    <button type="submit" formaction="/Home/Index" formenctype="multipart/form-data" formnovalidate formtarget="_blank" width="200" height="50">Gonder Diger Sayfa</button>
 
                 </div>
             </form>
