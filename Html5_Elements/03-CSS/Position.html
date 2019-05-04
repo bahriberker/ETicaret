@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning</title>
+<style>
+
+div{
+    position:-webkit-sticky;
+    position:sticky;
+    border: 2px solid#4FCE4F;
+    left:50px;
+    top:10px;
+    background-color: greenyellow;
+}
+
+li{
+    display:inline-block;
+    border:2px solid green;
+    margin-left:8px;
+    padding:3px;
+    background-color:greenyellow;
+}
+li:nth-child(2){
+    position:relative;
+    left:30px;
+    top:30px;
+    
+}
+
+.abs{
+    position:relative;
+    display:block;
+    width: 300px;
+    height: 350px;
+}
+
+.paraf{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    border:2px solid red;
+    margin:0;
+    padding:0;
+
+}
+
+</style>
+    
+</head>
+<body>
+
+
+    <div class="abs">
+        <p class="paraf">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Perspiciatis, inventore quo?</li>
+        <li>Consectetur, veniam ipsum?</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, praesentium molestias molestiae ratione ut sequi quasi, aut fugiat inventore dolores necessitatibus ad incidunt sunt. Repellendus repudiandae expedita id nobis eos!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, praesentium molestias molestiae ratione ut sequi quasi, aut fugiat inventore dolores necessitatibus ad incidunt sunt. Repellendus repudiandae expedita id nobis eos!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, praesentium molestias molestiae ratione ut sequi quasi, aut fugiat inventore dolores necessitatibus ad incidunt sunt. Repellendus repudiandae expedita id nobis eos!</p>
+
+    <div>
+        Ben static pozisyonluyum.
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit optio animi eius quaerat doloribus temporibus velit recusandae fuga iure? Delectus quo consequuntur non quidem architecto itaque placeat eum exercitationem.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, praesentium molestias molestiae ratione ut sequi quasi, aut fugiat inventore dolores necessitatibus ad incidunt sunt. Repellendus repudiandae expedita id nobis eos!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, praesentium molestias molestiae ratione ut sequi quasi, aut fugiat inventore dolores necessitatibus ad incidunt sunt. Repellendus repudiandae expedita id nobis eos!</p>
+</body>
+</html>
